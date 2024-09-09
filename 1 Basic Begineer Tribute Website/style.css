@@ -1,0 +1,82 @@
+/*Removing browser automatic margin*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+/*Adding Background Colour & Border*/
+.container{
+    background-color: skyblue ;
+    min-height: 100vh;
+    border: 5px solid black;
+}
+
+/*Adding styling to content*/
+.content{
+    max-width: 900px;  /*It is maximum width*/
+    margin: 0 auto;
+}
+.topsection{
+    margin-top: 80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end ;
+    
+}
+.topsection h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: darkorange;
+    text-transform:uppercase
+}
+.topsection h4 {
+    text-align: end;
+    font-size: 20px;
+}
+
+.image_container{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image_container,img{
+    width:300px;
+    height:300px;
+}
+
+.about_section{
+    margin-top: 70px;
+}
+.about_section h2 {
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom:20px;
+}
+.about_section p {
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 1.5px;
+    text-align: justify;
+
+    
+}
+.biography_section{
+    margin-bottom: 50px;
+}
+.biography_section h3{
+    margin-top:50px;
+    margin-bottom:30px;
+}
+.biography_section ul{
+    margin-left: 50px;
+}
+.biography_section li{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+footer{
+    margin:50px;
+}
+footer p{
+    text-align:end;
+}

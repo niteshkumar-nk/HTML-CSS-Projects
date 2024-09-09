@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+body{
+    background-color:#ccc;
+}
+
+.apply_box{
+    max-width: 600px;
+    padding:20px;
+    background-color: white;
+    margin:0 auto;
+    margin-top:50px;
+    box-shadow:4px 3px 5px rgba(1,1,1,0.1);
+    border-radius: 10px;
+}
+.title_small{
+    font-size: 20px;
+}
+
+/*GRID is basically used for alignment and it is advanced css*/
+
+.form_container{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+}
+
+.form_control{
+    display:flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+input, select, textarea{
+    padding:6px 10px; /*6px up and down, 10px left and right*/
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus{
+    outline-color: greenyellow;
+}
+
+.button_container{
+    Justify-content:flex-end;
+    margin-top: 20px;
+}
+
+button{
+    background-color:blue;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: yellow;
+    border-radius: 8px;
+    transition: 0.5s ease-in;
+}
+button:hover{
+    background-color: black;
+    border:2px solid yellow;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+
+}
+
+.textarea_control{
+    grid-column: 1 / span 2;  
+    
+    /*address vala spacing jyada le rha tha 
+    lekin ab vo 2grid tak hi le skta hai spacing. 
+    2 grid occupie kar lega */ 
+}
+.textarea_control textarea{
+    width: 100%;
+}
+
+/*Mobile ke size ke according web page ko manage karne ke liye use karte hain.*/
+
+@media(max-width: 460px)
+{
+    .textarea_control{
+        grid-column: 1 / span 1;  
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
